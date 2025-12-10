@@ -1,0 +1,16 @@
+class Solution {
+    public int countPermutations(int[] arr) {
+        int lens=arr.length;//to count
+        long ans=1;
+        long mod=1000000007;
+        for(int i=1;i<lens;i++){
+            if(arr[i]<=arr[0]){// the first computer is always greater then arr[i]
+                return 0;     
+            }
+            else{
+                ans = (ans * i) % mod;
+            }
+        }
+        return (int)ans;
+    }
+}
