@@ -35,35 +35,35 @@ This repository reflects my long-term commitment to consistent coding practice a
 ---
 ## Learning Focus
 
-Algorithmic thinking
+- Algorithmic thinking
 
-Problem decomposition
+- Problem decomposition
 
-Edge case handling
+- Edge case handling
 
-Java best practices
+- Java best practices
 
 Interview-style problem solving
 
 ---
 ## 🤝 Contributions
 
-This is a personal learning repository.
-Suggestions, improvements, and optimized solutions are welcome via Pull Requests or Issues.
+- This is a personal learning repository.
+- Suggestions, improvements, and optimized solutions are welcome via Pull Requests or Issues.
 
 ---
 ## 📜 License
 
-This project is open-source and intended for educational purposes.
+- This project is open-source and intended for educational purposes.
 
 ---
 ## 👤 Author
 
 Navin Rajaa
 
-GitHub: https://github.com/navinrajaa2
+- GitHub: https://github.com/navinrajaa2
 
-LeetCode: https://leetcode.com/u/navinrajaa/
+- LeetCode: https://leetcode.com/u/navinrajaa/
 
 ---
 ## 🧪 How to Use
