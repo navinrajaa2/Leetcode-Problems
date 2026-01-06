@@ -33,7 +33,7 @@ This repository reflects my long-term commitment to consistent coding practice a
 - Focus on clarity and correctness  
 
 ---
-Learning Focus
+## Learning Focus
 
 Algorithmic thinking
 
@@ -45,16 +45,19 @@ Java best practices
 
 Interview-style problem solving
 
-🤝 Contributions
+---
+## 🤝 Contributions
 
 This is a personal learning repository.
 Suggestions, improvements, and optimized solutions are welcome via Pull Requests or Issues.
 
-📜 License
+---
+## 📜 License
 
 This project is open-source and intended for educational purposes.
 
-👤 Author
+---
+## 👤 Author
 
 Navin Rajaa
 
@@ -62,7 +65,7 @@ GitHub: https://github.com/navinrajaa2
 
 LeetCode: https://leetcode.com/u/navinrajaa/
 
-
+---
 ## 🧪 How to Use
 
 1. **Clone the repository**
