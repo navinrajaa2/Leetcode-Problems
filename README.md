@@ -33,13 +33,6 @@ This repository reflects my long-term commitment to consistent coding practice a
 - Focus on clarity and correctness  
 
 ---
-
-## 🧪 How to Use
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/navinrajaa2/Leetcode-Problems-java.git
-
 Learning Focus
 
 Algorithmic thinking
@@ -68,3 +61,11 @@ Navin Rajaa
 GitHub: https://github.com/navinrajaa2
 
 LeetCode: https://leetcode.com/u/navinrajaa/
+
+
+## 🧪 How to Use
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/navinrajaa2/Leetcode-Problems-java.git
+
