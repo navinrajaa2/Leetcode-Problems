@@ -1,0 +1,18 @@
+public class leet264 {
+    public int nthUglyNumber(int n) {
+        int[] ugly = new int[n];
+        ugly[0] = 1;
+        int m2 = 0, m3 = 0, m5 = 0;
+        for (int i = 1; i < n; i++) {
+            int uglynumber = Math.min(Math.min(ugly[m2] * 2, ugly[m3] * 3), ugly[m5] * 5);
+            ugly[i] = uglynumber;
+            if (uglynumber == ugly[m2] * 2)
+                m2++;
+            if (uglynumber == ugly[m3] * 3)
+                m3++;
+            if (uglynumber == ugly[m5] * 5)
+                m5++;
+        }
+        return ugly[n - 1];
+    }
+}
