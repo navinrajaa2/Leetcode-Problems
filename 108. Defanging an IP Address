@@ -1,0 +1,16 @@
+class Solution {
+    public String defangIPaddr(String address) {
+        StringBuilder navin=new StringBuilder();
+        char[] ip=address.toCharArray();
+        for(int i=0;i<address.length();i++){
+            if(ip[i]=='.'){
+                navin.append("[.]");
+            }
+            else{
+                navin.append(ip[i]);
+            }
+            
+        }
+        return navin.toString();
+    }
+}
