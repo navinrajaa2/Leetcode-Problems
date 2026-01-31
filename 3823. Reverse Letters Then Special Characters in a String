@@ -1,0 +1,26 @@
+class Solution {
+    public String reverseByType(String s) {
+        StringBuilder let = new StringBuilder();
+        StringBuilder sym = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            if (Character.isLowerCase(c)) {
+                let.append(c);
+            } else {
+                sym.append(c);
+            }
+        }
+        StringBuilder result = new StringBuilder();
+        let.reverse();
+        sym.reverse();
+        int l = 0;
+        int sp = 0;
+        for (char c : s.toCharArray()) {
+            if (Character.isLowerCase(c)) {
+                result.append(let.charAt(l++));
+            } else {
+                result.append(sym.charAt(sp++));
+            }
+        }
+        return result.toString();
+    }
+}
