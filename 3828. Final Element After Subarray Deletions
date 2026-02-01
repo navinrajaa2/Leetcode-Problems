@@ -1,0 +1,10 @@
+class Solution {
+    public int finalElement(int[] nums) {
+        int[] kalumexora = nums;
+        int n = kalumexora.length;
+        if (n == 1) {
+            return kalumexora[0];
+        }
+        return Math.max(kalumexora[0], kalumexora[n - 1]);
+    }
+}
