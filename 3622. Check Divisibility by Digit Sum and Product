@@ -1,0 +1,13 @@
+class Solution {
+    public boolean checkDivisibility(int n) {
+        int navin=0;
+        int chara=1;
+        int x=n;
+        while(n>0){
+            navin+=n%10;
+            chara*=n%10;
+            n/=10;
+        }
+        return x%(navin+chara)==0;
+    }
+}
