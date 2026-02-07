@@ -1,0 +1,11 @@
+class Solution {
+    public int sumBase(int n, int k) {
+        int answer=0;
+        while(n>0){
+            int digit=n%k;
+            answer+=digit;
+            n/=k;
+        }
+        return answer;
+    }
+}
