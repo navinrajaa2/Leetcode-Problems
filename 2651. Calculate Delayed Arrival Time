@@ -1,0 +1,6 @@
+class Solution {
+    public int findDelayedArrivalTime(int arrivalTime, int delayedTime) {
+        int answer =arrivalTime+delayedTime;
+        return (answer>=24)?answer-24:answer;
+    }
+}
