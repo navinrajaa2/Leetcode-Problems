@@ -1,0 +1,14 @@
+class Solution {
+    public boolean canConstruct(String ransomNote, String magazine) {
+        if(ransomNote.length()>magazine.length())return false;
+        int[] letter=new int[26];
+        for(char s:magazine.toCharArray()){
+            letter[s-'a']++;
+        }
+        for(char s:ransomNote.toCharArray()){
+            if(letter[s-'a']==0) return false;
+            letter[s-'a']--;
+        }
+        return true;
+    }
+}
