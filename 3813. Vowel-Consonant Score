@@ -1,0 +1,17 @@
+class Solution {
+    public int vowelConsonantScore(String s) {
+        int count1=0;
+        int count2=0;
+        String vowels="aeiou";
+        for(char ch:s.toCharArray()){
+            if(vowels.indexOf(ch)!=-1){
+                count1++;
+                continue;
+            }
+            if(Character.isAlphabetic(ch)){
+                count2++;
+            }
+        }
+        return count2==0?0:count1/count2;
+    }
+}
