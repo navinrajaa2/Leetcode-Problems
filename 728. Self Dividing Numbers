@@ -1,0 +1,22 @@
+class Solution {
+    public List<Integer> selfDividingNumbers(int left, int right) {
+        List<Integer> navin=new ArrayList<>();
+        for(int i=left;i<=right;i++){
+            if(self(i)){
+                navin.add(i);
+            }
+        }
+        return navin;
+    }
+    public boolean self(int num){
+        int originalnum=num;
+        while(num>0){
+            int digit=num%10;
+            if(digit==0 || originalnum%digit !=0){
+                return false;
+            }
+            num/=10;
+        }
+        return true;
+    }
+}
