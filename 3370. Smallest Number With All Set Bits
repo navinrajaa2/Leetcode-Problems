@@ -1,0 +1,9 @@
+class Solution {
+    public int smallestNumber(int n) {
+        int na=n;
+        while((na &(na+1))!=0){
+            na++;
+        }
+        return na;
+    }
+}
