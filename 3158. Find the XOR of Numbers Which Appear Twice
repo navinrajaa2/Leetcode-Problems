@@ -1,0 +1,14 @@
+class Solution {
+    public int duplicateNumbersXOR(int[] nums) {
+        HashSet<Integer>navin = new HashSet<>();
+        int answer=0;
+        for(int num:nums){
+            if(navin.contains(num)){
+                answer^=num;
+            }else{
+                navin.add(num);
+            }
+        }
+        return answer;
+    }
+}
