@@ -1,0 +1,15 @@
+import java.util.*;
+class Solution {
+    public int firstUniqueEven(int[] nums) {
+        HashMap<Integer,Integer> counts=new HashMap<>();
+        for(int num:nums){
+            counts.put(num,counts.getOrDefault(num,0)+1);
+        }
+        for(int num:nums){
+            if(num %2==0 && counts.get(num)==1){
+                return num;
+            }
+        }
+        return -1;
+    }
+}
