@@ -1,0 +1,9 @@
+class Solution {
+    public boolean squareIsWhite(String coordinates) {
+        int letter = coordinates.charAt(0) - 'a' + 1;
+        int num = coordinates.charAt(1) - '0';
+        int sum=letter+num;
+        if(sum%2==0)return false;
+        return true;
+    }
+}
