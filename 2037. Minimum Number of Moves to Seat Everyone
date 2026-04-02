@@ -1,0 +1,31 @@
+class Solution {
+    public int minMovesToSeat(int[] seats, int[] students) {
+        QuickSort(seats,0,seats.length-1);
+        QuickSort(students,0,students.length-1);
+        int sum=0;
+        for(int i=0;i<seats.length;i++){
+            sum+=Math.abs(students[i]-seats[i]);
+        }
+        return sum;
+    }
+    public void QuickSort(int arr[],int low,int high){
+        if(low>=high)return;
+        int s=low;
+        int e=high;
+        int m=s+(e-s)/2;
+        int pivot=arr[m];
+        while(s<=e){
+            while(arr[s]<pivot)s++;
+            while(arr[e]>pivot)e--;
+            if(s<=e){
+                int temp=arr[s];
+                arr[s]=arr[e];
+                arr[e]=temp;
+                s++;
+                e--;
+            }
+        }
+        QuickSort(arr,low,e);
+        QuickSort(arr,s,high);
+    }
+}
