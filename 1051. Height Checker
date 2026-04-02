@@ -1,0 +1,31 @@
+class Solution {
+    public int heightChecker(int[] heights) {
+        int[] arrNonDecrea = heights.clone();
+        int count=0;
+        QuickSort(arrNonDecrea,0,heights.length-1);
+        for(int i=0;i<heights.length;i++){
+            if(heights[i]!=arrNonDecrea[i])count++;
+        }
+        return count;
+    }
+    public void QuickSort(int arr[],int low,int high){
+        if(low>=high)return;
+        int s=low;
+        int e=high;
+        int m=s+(e-s)/2;
+        int pivot=arr[m];
+        while(s<=e){
+            while(arr[s]<pivot)s++;
+            while(arr[e]>pivot)e--;
+            if(s<=e){
+                int temp=arr[s];
+                arr[s]=arr[e];
+                arr[e]=temp;
+                s++;
+                e--;
+            }
+        }
+        QuickSort(arr,low,e);
+        QuickSort(arr,s,high);
+    }
+}
