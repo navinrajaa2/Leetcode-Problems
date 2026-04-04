@@ -1,0 +1,14 @@
+class Solution {
+    public boolean areNumbersAscending(String s) {
+        String []collection=s.split(" ");
+        int previous=0;
+        for (String word:collection){
+            int ch=word.charAt(0)-'0';
+            if(ch>=0 && ch<=9){
+                if(previous>=Integer.parseInt(word))return false;
+                previous=Integer.parseInt(word);
+            }
+        }
+        return true;
+    }
+}
