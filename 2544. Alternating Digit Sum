@@ -1,0 +1,23 @@
+class Solution {
+    public int alternateDigitSum(int n) {
+        int answer=0;
+        int sum=0;
+        int sign=1;
+        int temp=n;
+        int count=0;
+        while(temp>0){
+            count++;
+            temp/=10;
+        }
+        while(n>0){
+            sum=n%10;
+            answer+=sum*sign;
+            n/=10;
+            sign*=-1;
+        }
+        if(count%2==0){
+            answer=-answer;
+        }
+        return answer;
+    }
+}
