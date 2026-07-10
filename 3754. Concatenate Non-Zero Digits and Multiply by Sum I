@@ -1,0 +1,19 @@
+class Solution {
+    public long sumAndMultiply(int n) {
+        int temp=n;
+        long sum=0;
+        long nonZero=0;
+        int rev=0;
+        while(temp>0){
+            int lastDigit=temp%10;
+            sum+=lastDigit;
+            if(lastDigit!=0)rev=rev*10+lastDigit;
+            temp/=10;
+        }
+        while (rev > 0) {
+            nonZero = nonZero * 10 + rev % 10;
+            rev /= 10;
+        }
+        return sum*nonZero;
+    }
+}
