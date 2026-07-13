@@ -1,0 +1,15 @@
+class Solution {
+    public int secondsBetweenTimes(String startTime, String endTime) {
+    String[] parts1 = startTime.split(":");
+    int starthours = Integer.parseInt(parts1[0]);
+    int startminutes = Integer.parseInt(parts1[1]);
+    int startsecond = Integer.parseInt(parts1[2]);
+    String[] parts2 = endTime.split(":");
+    int endhours = Integer.parseInt(parts2[0]);
+    int endminutes = Integer.parseInt(parts2[1]);
+    int endseconds = Integer.parseInt(parts2[2]);    
+        int totalstart=starthours*3600+startminutes*60+startsecond;
+        int totalend=endhours*3600+endminutes*60+endseconds;
+        return totalend-totalstart;
+    }
+}
