@@ -1,0 +1,14 @@
+class Solution {
+    public String clearDigits(String s) {
+        StringBuilder navin=new StringBuilder();
+        for(char ele:s.toCharArray()){
+            if(ele>='a' && ele<='z'){
+                navin.append(ele);
+            }
+            else{
+                navin.deleteCharAt(navin.length()-1);
+            }
+        }
+        return navin.toString();
+    }
+}
