@@ -1,0 +1,12 @@
+class Solution {
+    public boolean canAliceWin(int[] nums) {
+        int doubledi=0;
+        int single=0;
+        for(int ele:nums){
+            if(ele>0 && ele<10)single+=ele;
+            else doubledi+=ele;
+        }
+        if(doubledi==single)return false;
+        return true;
+    }
+}
