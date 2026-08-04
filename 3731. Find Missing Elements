@@ -1,0 +1,19 @@
+class Solution {
+    public List<Integer> findMissingElements(int[] nums) {
+        int n=nums.length;
+        ArrayList navin=new ArrayList <>();
+        int min=nums[0];
+        int max=nums[0];
+        for(int i=0;i<n;i++){
+            if(nums[i]<min)min=nums[i];
+            if(nums[i]>max)max=nums[i];
+        }
+        int[] check=new int[max+1];    
+        for(int ele:nums){
+            check[ele]++;
+        }
+        for(int i=min+1;i<max;i++){
+            if(check[i]<1)navin.add(i);        }
+        return navin;
+    }
+}
