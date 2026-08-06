@@ -1,0 +1,12 @@
+class Solution {
+    public int smallestNumber(int n, int t) {
+        int temp=n;
+        int product=1;
+        while(temp>0){
+            product=product*(temp%10);
+            temp/=10;
+        }
+        if(product==0 || product%t==0)return n;
+        return smallestNumber(n+1,t);
+    }
+}
